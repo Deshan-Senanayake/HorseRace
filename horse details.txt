@@ -1,9 +1,0 @@
-1, aaa, aa, 2, aaa, aa, A, C:\Users\Deshan\Pictures\dilshan.jpg
-2, ddd, dd, 3, dd, dd, B, C:\Users\Deshan\Pictures\dilshan.jpg
-3, sss, sss, 2, sss, sss, A, C:\Users\Deshan\Pictures\ginura.jpg
-4, www, www, 2, www, ww, B, C:\Users\Deshan\Pictures\dilshan.jpg
-5, qqqq, qqq, 2, qqq, qqq, C, C:\Users\Deshan\Pictures\ginura.jpg
-6, ee, ee, 4, eee, ee, C, C:\Users\Deshan\Pictures\ginura.jpg
-7, zzz, zz, 4, zzz, zzz, D, C:\Users\Deshan\Pictures\htindu max.jpg
-8, tt, ttt, 5, tt, ttt, D, C:\Users\Deshan\Pictures\htindu max.jpg
-10, xxxx, xxxx, 4, xxxx, xxx, D, C:\Users\Deshan\Pictures\s.jpg
