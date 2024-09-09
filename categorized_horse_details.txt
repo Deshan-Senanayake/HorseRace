@@ -1,0 +1,8 @@
+Group A - 1, aaa, aa, 2, aaa, aa, A, C:\Users\Deshan\Pictures\dilshan.jpg
+Group B - 2, ddd, dd, 3, dd, dd, B, C:\Users\Deshan\Pictures\dilshan.jpg
+Group A - 3, sss, sss, 2, sss, sss, A, C:\Users\Deshan\Pictures\ginura.jpg
+Group B - 4, www, www, 2, www, ww, B, C:\Users\Deshan\Pictures\dilshan.jpg
+Group C - 5, qqqq, qqq, 2, qqq, qqq, C, C:\Users\Deshan\Pictures\ginura.jpg
+Group C - 6, ee, ee, 4, eee, ee, C, C:\Users\Deshan\Pictures\ginura.jpg
+Group D - 7, zzz, zz, 4, zzz, zzz, D, C:\Users\Deshan\Pictures\htindu max.jpg
+Group D - 8, tt, ttt, 5, tt, ttt, D, C:\Users\Deshan\Pictures\htindu max.jpg

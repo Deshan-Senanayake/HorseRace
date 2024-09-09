@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="430.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.Controller">
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: #99ff99;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Command Line Menu" textAlignment="CENTER" wrappingWidth="323.22021484375">
+               <font>
+                  <Font name="Bauhaus 93" size="35.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="382.0" prefWidth="298.0" spacing="10.0" style="-fx-background-color: #99ffdd;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#ahd" prefHeight="26.0" prefWidth="140.0" text="ADD HORSE DETAILS" />
+            <Button mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="150.0" text="DELETE HORSE DETAILS" />
+            <Button mnemonicParsing="false" onAction="#update" prefHeight="26.0" prefWidth="154.0" text="UPDATE HORSE DETAILS" />
+            <Button mnemonicParsing="false" onAction="#view" prefHeight="26.0" prefWidth="138.0" text="VIEW HORSE DETAILS" />
+            <Button mnemonicParsing="false" onAction="#save" prefHeight="26.0" prefWidth="134.0" text="SAVE HORSE DETAILS" />
+            <Button mnemonicParsing="false" onAction="#start" prefHeight="26.0" prefWidth="213.0" text="SELECT FOR FINALS (SEMI FINALS)" />
+            <Button mnemonicParsing="false" onAction="#win" prefHeight="26.0" prefWidth="216.0" text="DISPLAY 1st, 2nd AND 3rd (FINALS)" />
+            <Button mnemonicParsing="false" onAction="#finale" text="VISUALIZE 1st, 2nd AND 3rd" />
+            <Button mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="70.0" text="EXIT" />
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="70.0" text="BACK" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="50.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="377.0" prefWidth="469.0" spacing="9.0" style="-fx-background-color: #66ffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To add horse details.">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To update horse details.">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To delete horse details.">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To view horse details.">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To save horse details.">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To select a horse from each group for grand finals">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To display 1st, 2nd and 3rd (FINALS)">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To visualize the performance of FINALS">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="To exit.">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="8.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

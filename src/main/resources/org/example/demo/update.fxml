@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="794.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.updateController">
+   <center>
+      <VBox prefHeight="410.0" prefWidth="446.0" spacing="20.0" style="-fx-background-color: #66ffff;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets right="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <TextField fx:id="newHorseNameTextField" promptText="Enter New Horse Name" />
+            <TextField fx:id="newJockeyNameTextField" promptText="Enter New Jockey Name" />
+            <TextField fx:id="newAgeTextField" promptText="Enter New Age" />
+            <TextField fx:id="newBreedTextField" promptText="Enter New Breed" />
+            <TextField fx:id="newRaceRecordTextField" promptText="Enter New Race Record" />
+            <TextField fx:id="newGroupTextField" promptText="Enter New Group" />
+            <Button mnemonicParsing="false" onAction="#imageSaver" text="Insert New Image">
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fx:id="horseImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="imageNameLabel" text="Image Name" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="422.0" prefWidth="178.0" spacing="23.0" style="-fx-background-color: #99ffdd;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Horse Name" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jockey Name" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Breed" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Race Record" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Group" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Horse Image" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="50.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" prefHeight="535.0" prefWidth="186.0" spacing="10.0" style="-fx-background-color: #66ffff;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Button fx:id="saveChangesButton" mnemonicParsing="false" onAction="#saveChanges" text="Save Changes" />
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetFields" text="Reset Text Fields" />
+            <Button fx:id="mainMenuButton" mnemonicParsing="false" onAction="#onMainMenuClicked" text="Main Menu" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <top>
+      <BorderPane fx:id="borderPane" prefHeight="269.0" prefWidth="811.0" BorderPane.alignment="CENTER">
+         <left>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #99ffdd;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Horse ID" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox alignment="CENTER" prefHeight="53.0" prefWidth="350.0" style="-fx-background-color: #66ffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="horseIDTextField" promptText="Enter Horse ID to find the Horse" />
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <HBox alignment="TOP_CENTER" prefHeight="42.0" prefWidth="811.0" style="-fx-background-color: #99ff99;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Update Horse Details">
+                     <font>
+                        <Font name="Tempus Sans ITC" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <VBox alignment="CENTER" prefHeight="40.0" prefWidth="281.0" style="-fx-background-color: #66ffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="loadDataButton" mnemonicParsing="false" onAction="#loadData" text="Load data for this ID" />
+               </children>
+            </VBox>
+         </right>
+         <bottom>
+            <GridPane prefHeight="196.0" prefWidth="811.0" style="-fx-background-color: #ccf2ff;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="418.0" minWidth="10.0" prefWidth="406.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="410.0" minWidth="10.0" prefWidth="406.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Horse Name :">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Jockey Name :" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="Age :" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="Breed :" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="Race Record :" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="Group :" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label text="Image Path :" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="horseName" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="jockeyName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="age" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="breed" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="raceRecord" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="group" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="imagePath" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Bell MT Italic" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+         </bottom>
+      </BorderPane>
+   </top>
+</BorderPane>

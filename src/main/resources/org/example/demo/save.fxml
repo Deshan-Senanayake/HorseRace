@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="184.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.saveController">
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="600.0" style="-fx-background-color: #99ff99;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Save Text File by Categorizing According To The Group" textAlignment="CENTER" wrappingWidth="439.601806640625">
+               <font>
+                  <Font name="Tempus Sans ITC" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <VBox alignment="CENTER" prefHeight="440.0" prefWidth="141.0" style="-fx-background-color: #66ffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onMainMenuClicked" text="Main Menu" />
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: #66ffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="categorizeButton" mnemonicParsing="false" text="Save" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="600.0" style="-fx-background-color: #66ffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.addController">
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="600.0" style="-fx-background-color: #99ff99;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Horse Details" wrappingWidth="240.40179443359375">
+               <font>
+                  <Font name="Tempus Sans ITC" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="452.0" prefWidth="292.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets right="10.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets right="50.0" />
+         </BorderPane.margin>
+         <children>
+            <TextField fx:id="horseIDField" promptText="Enter Horse ID" />
+            <TextField fx:id="horseNameField" promptText="Enter Horse Name" />
+            <TextField fx:id="jockeyNameField" promptText="Enter Jockey Name" />
+            <TextField fx:id="ageField" promptText="Enter Age" />
+            <TextField fx:id="breedField" promptText="Enter Breed" />
+            <TextField fx:id="raceRecordField" promptText="Enter Race Record" />
+            <TextField fx:id="groupField" promptText="Enter Group" />
+            <Button fx:id="button" mnemonicParsing="false" onAction="#imageSaver" text="Insert Image">
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fx:id="horseImageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="imageNameLabel" text="Image Name" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="422.0" prefWidth="178.0" spacing="23.0" style="-fx-background-color: #99ffdd;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Horse ID" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Horse Name" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jockey Name" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Breed" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Race Record" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Group" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Horse Image" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="50.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#onSaveClicked" text="Save" />
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#onResetClicked" text="Reset" />
+            <Button fx:id="mainMenuButton" mnemonicParsing="false" onAction="#onMainMenuClicked" text="Main Menu" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+</BorderPane>
